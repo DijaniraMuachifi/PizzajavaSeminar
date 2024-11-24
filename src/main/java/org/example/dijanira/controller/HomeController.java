@@ -30,7 +30,7 @@ public class HomeController {
     @Autowired
     private UserManager userManager;
 
-    // Default constructor for dependency injection
+    
     public HomeController() {
     }
 
