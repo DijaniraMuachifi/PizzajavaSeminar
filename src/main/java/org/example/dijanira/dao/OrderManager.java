@@ -76,7 +76,7 @@ public class OrderManager {
             preparedStatement.setInt(2, order.getAmount());
             preparedStatement.setTimestamp(3, order.getTaken());
 
-            // Check if dispatched is provided
+            
             if (order.getDispatched() != null) {
                 preparedStatement.setTimestamp(4, order.getDispatched());
             } else {
