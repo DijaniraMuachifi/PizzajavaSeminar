@@ -16,7 +16,7 @@ public class OrderManager {
     }
     public Orders getOrderById(Long id) {
         Orders result = null;
-        String sql = "SELECT * FROM `order` WHERE id = ?";  // Use a 'prepared statement'
+        String sql = "SELECT * FROM `order` WHERE id = ?";  
 
         try (Connection connection = databaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
