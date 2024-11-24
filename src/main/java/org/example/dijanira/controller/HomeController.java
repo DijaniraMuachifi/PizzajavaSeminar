@@ -20,7 +20,7 @@ public class HomeController {
     @Autowired
     private PizzaManager pizzaManager;
     @Autowired
-    private ContactMessageManager contactMessageManager; // Add ContactMessageManager
+    private ContactMessageManager contactMessageManager; 
 
     @Autowired
     private OrderManager orderManager;
