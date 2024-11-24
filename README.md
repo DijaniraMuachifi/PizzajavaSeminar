@@ -1,4 +1,4 @@
-# Online Order Management System
+# Pizza Management System
 
 ### Developed by: Dijanira and Alfred
 GitHub Repository: https://github.com/DijaniraMuachifi/PizzajavaSeminar.git 
