@@ -70,7 +70,7 @@ public class HomeController {
         ContactMessage contactMessage = new ContactMessage(name, email, message);
         contactMessageManager.saveMessage(contactMessage);
 
-        // Success message
+        
         model.addAttribute("success", "Your message has been sent successfully.");
         return "page/contact"; // Return the form with success message
     }
