@@ -82,7 +82,7 @@ public class HomeController {
         List<Category> categories = categoryManager.getAll();
         List<User> users=userManager.getAll();
 
-        // Add data to the model
+        
         model.addAttribute("pizzas", pizzas);
         model.addAttribute("orders", orders);
         model.addAttribute("categories", categories);
