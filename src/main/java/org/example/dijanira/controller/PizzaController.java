@@ -35,7 +35,7 @@ public class PizzaController {
     public String showUpdatePizzaForm(@PathVariable String pname, Model model) {
         Pizza pizza = pizzaManager.getPizzaByName(pname);
         model.addAttribute("pizza", pizza);
-        return "page/UpdatePizza"; // Página de atualização
+        return "page/UpdatePizza"; 
     }
 
     @PostMapping("/update-pizza/{pname}")
