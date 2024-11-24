@@ -42,7 +42,7 @@ public class OrderManager {
     }
 
 
-    // Retrieve all orders
+    
     public List<Orders> getAll() {
         List<Orders> result = new ArrayList<>();
         String sql = "SELECT * FROM `order`  ORDER BY `order`.`id` DESC LIMIT 20";
