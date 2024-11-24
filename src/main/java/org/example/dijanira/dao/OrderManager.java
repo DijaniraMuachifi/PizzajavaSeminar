@@ -21,7 +21,7 @@ public class OrderManager {
         try (Connection connection = databaseConnection.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
-            // Set the parameter for the query (id)
+           
             preparedStatement.setInt(1, Math.toIntExact(id));
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
