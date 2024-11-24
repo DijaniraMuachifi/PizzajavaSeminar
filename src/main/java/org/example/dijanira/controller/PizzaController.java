@@ -28,7 +28,7 @@ public class PizzaController {
         Pizza pizza = new Pizza(name, category, "yes".equals(vegan));
         pizzaManager.addPizza(pizza);
         model.addAttribute("message", "Pizza added successfully!");
-        return "redirect:/home"; // Redireciona para a página inicial
+        return "redirect:/home"; 
     }
 
     @GetMapping("/update-pizza/{pname}")
