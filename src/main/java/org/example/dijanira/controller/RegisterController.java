@@ -20,7 +20,7 @@ public class RegisterController {
     @PostMapping("/register")
     public String registerUser(User user) {
         if (userService.isEmailExists(user.getEmail())) {
-            return "redirect:/register?error=emailExists"; // Se o e-mail já existir, redireciona com mensagem de erro
+            return "redirect:/register?error=emailExists"; 
         }
 
 
