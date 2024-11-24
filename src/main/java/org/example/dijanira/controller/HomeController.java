@@ -45,7 +45,7 @@ public class HomeController {
         List<Pizza> pizzas = pizzaManager.getAll();
 
 
-        // Add pizzas to the model
+        
         model.addAttribute("pizzas", pizzas);
 
         return "page/Home";
