@@ -66,7 +66,7 @@ public class HomeController {
             return "page/contact"; // Return the form with error message
         }
 
-        // Save the contact message in the database
+        
         ContactMessage contactMessage = new ContactMessage(name, email, message);
         contactMessageManager.saveMessage(contactMessage);
 
