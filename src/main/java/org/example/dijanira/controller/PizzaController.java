@@ -48,7 +48,7 @@ public class PizzaController {
         Pizza pizza = new Pizza(pname, category, "yes".equals(vegan));
         pizzaManager.updatePizza(pizza);
         model.addAttribute("message", "Pizza updated successfully!");
-        return "redirect:/home"; // Redireciona para a página inicial
+        return "redirect:/home"; 
     }
 
     @GetMapping("/delete-pizza/{pname}")
