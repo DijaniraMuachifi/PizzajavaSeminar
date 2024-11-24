@@ -65,7 +65,7 @@ public class OrderManager {
         return result;
     }
 
-    // Add a new order
+    
     public void addOrder(Orders order) {
         String sql = "INSERT INTO `order` (pizzaname, amount, taken, dispatched) VALUES (?, ?, ?, ?)";
 
