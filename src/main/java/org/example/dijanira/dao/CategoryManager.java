@@ -69,7 +69,7 @@ public class CategoryManager {
         }
     }
 
-    // Deletar uma categoria
+    
     public void deleteCategory(String cname) {
         String sql = "DELETE FROM category WHERE cname = ?";
 
