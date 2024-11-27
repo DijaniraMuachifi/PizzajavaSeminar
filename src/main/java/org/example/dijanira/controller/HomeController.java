@@ -30,7 +30,7 @@ public class HomeController {
     @Autowired
     private UserManager userManager;
 
-    // Default constructor for dependency injection
+    
     public HomeController() {
     }
 
@@ -45,7 +45,7 @@ public class HomeController {
         List<Pizza> pizzas = pizzaManager.getAll();
 
 
-        // Add pizzas to the model
+        
         model.addAttribute("pizzas", pizzas);
 
         return "page/Home";
@@ -66,11 +66,11 @@ public class HomeController {
             return "page/contact"; // Return the form with error message
         }
 
-        // Save the contact message in the database
+        
         ContactMessage contactMessage = new ContactMessage(name, email, message);
         contactMessageManager.saveMessage(contactMessage);
 
-        // Success message
+        
         model.addAttribute("success", "Your message has been sent successfully.");
         return "page/contact"; // Return the form with success message
     }
@@ -82,7 +82,7 @@ public class HomeController {
         List<Category> categories = categoryManager.getAll();
         List<User> users=userManager.getAll();
 
-        // Add data to the model
+        
         model.addAttribute("pizzas", pizzas);
         model.addAttribute("orders", orders);
         model.addAttribute("categories", categories);
